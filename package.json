@@ -3,7 +3,10 @@
     "name": "startbootstrap-grayscale",
     "version": "5.0.8",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "build": "node_modules/.bin/gulp build",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d ."
     },
     "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
@@ -14,11 +17,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "homepage": "https://devnur.me/topcoderkz",
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
@@ -37,6 +36,7 @@
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "4.1.1",
+        "gh-pages": "^2.0.1",
         "gulp": "4.0.2",
         "gulp-autoprefixer": "6.1.0",
         "gulp-clean-css": "4.2.0",
