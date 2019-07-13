@@ -7,6 +7,16 @@ npm install
 npm start
 ```
 
+### Build
+```
+npm run build
+```
+
+### Deploy to GitHub pages
+```
+npm run deploy
+```
+
 #### Gulp Tasks
 
 - `gulp` the default task that builds everything
