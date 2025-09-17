@@ -1,231 +1,601 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Орал баня - Лучшее место для отдыха!</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Орал баня</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">График работы</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#signup">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Идите в баню!</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Самая большая парная в Уральске</h2>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Легкий, мягкий и вкусный пар</h2> 
-          <p class="text-white-50 mx-auto mt-2 mb-5">Парная: 81,1°С</p> 
-          <p class="text-white-50 mx-auto mt-2 mb-5">Печь: 892°С</p> 
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Подробнее</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">Первый разряд</h2>
-            <p class="text-white-50">мужские дни - пн, ср, чт, пт, сб, вс :: женский день - вт</p>
-            <p class="text-white-50">Комфортная раздевальная, мыльная с ледяной купелью, хамам, парная, услуги парения и мойки,
-              первоклассный сервис, изысканные интерьеры - идеальное место для отдыха и деловых встреч.</p>
-          </div>
-        </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
-      <div class="container">
-
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Банные товары</h4>
-              <p class="text-black-50 mb-0">Веники, банные шапки, тапочки, полотенца, простыни и многое другое - все, что нужно для каждого банщика!</p>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьный Портал - Связь между школой и родителями</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #ff7e30;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --info: #17a2b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: var(--dark);
+            max-width: 500px;
+            margin: 0 auto;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .app-container {
+            padding-bottom: 70px;
+        }
+        
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-bar {
+            background-color: white;
+            margin: 10px 15px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .search-bar input {
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        
+        .tabs {
+            display: flex;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        .tab {
+            padding: 15px 20px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            flex-shrink: 0;
+        }
+        
+        .tab.active {
+            border-bottom: 3px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .content {
+            padding: 15px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        
+        .user-info {
+            flex: 1;
+        }
+        
+        .user-name {
+            font-weight: 500;
+        }
+        
+        .post-time {
+            font-size: 0.8rem;
+            color: #777;
+        }
+        
+        .post-content {
+            margin-bottom: 15px;
+        }
+        
+        .post-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        
+        .post-actions {
+            display: flex;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+        
+        .action-btn {
+            flex: 1;
+            text-align: center;
+            color: #777;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .action-btn i {
+            margin-right: 5px;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            background-color: white;
+            border-top: 1px solid #eee;
+            z-index: 100;
+        }
+        
+        .nav-btn {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .nav-btn.active {
+            color: var(--primary);
+        }
+        
+        .nav-btn i {
+            font-size: 1.2rem;
+            display: block;
+            margin: 0 auto 5px;
+        }
+        
+        .event-date {
+            background-color: var(--secondary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .create-post-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            z-index: 101;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .child-selector {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 15px;
+            background: white;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .child-option {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: #f0f2f5;
+            margin-right: 10px;
+            flex-shrink: 0;
+            font-weight: 500;
+        }
+        
+        .child-option.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            margin-top: 15px;
+        }
+        
+        .album-item {
+            aspect-ratio: 1;
+            border-radius: 5px;
+            overflow: hidden;
+            background: #ddd;
+        }
+        
+        .album-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .notification-item {
+            display: flex;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .notification-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--info);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .badge {
+            background: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        
+        .icon-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-school"></i>
+                <span>Школьный Портал</span>
             </div>
-          </div>
+            <div class="user-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+        </header>
+        
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск сообщений, фото, событий...">
         </div>
-
-        <!-- Project One Row -->
-        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-          </div>
-          <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Бассейн</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                  <hr class="d-none d-lg-block mb-0 ml-0">
+        
+        <div class="child-selector">
+            <div class="child-option active">Алия Нурлан</div>
+            <div class="child-option">Данияр Нурлан</div>
+        </div>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="feed">Лента</div>
+            <div class="tab" data-tab="photos">Фото</div>
+            <div class="tab" data-tab="events">События</div>
+            <div class="tab" data-tab="messages">Сообщения</div>
+            <div class="tab" data-tab="notifications">Уведомления</div>
+        </div>
+        
+        <div class="content">
+            <div class="tab-content active" id="feed">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="user-info">
+                            <div class="user-name">Мария Ивановна</div>
+                            <div class="post-time">Сегодня, 10:30</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Сегодня на уроке рисования дети создавали красивые осенние пейзажи. Посмотрите, какие talented у нас дети!</p>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEyMCIgcj0iNDAiIGZpbGw9IiNmZmQ3NGEiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIxNTAiIHI9IjUwIiBmaWxsPSIjZDQ4YTMzIi8+PHJlY3QgeD0iMTAwIiB5PSIxNTAiIHdpZHRoPSIyMDAiIGhlaWdodD0iODAiIGZpbGw9IiNhNWQ4NmUiLz48L3N2Zz4=" class="post-image" alt="Детские рисунки">
+                    </div>
+                    <div class="post-actions">
+                        <div class="action-btn"><i class="far fa-heart"></i> Нравится</div>
+                        <div class="action-btn"><i class="far fa-comment"></i> Комментировать</div>
+                        <div class="action-btn"><i class="far fa-bookmark"></i> Сохранить</div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Two Row -->
-        <div class="row justify-content-center no-gutters">
-          <div class="col-lg-6">
-            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-          </div>
-          <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
-              <div class="d-flex h-100">
-                <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Парилка</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                  <hr class="d-none d-lg-block mb-0 mr-0">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar"><i class="fas fa-user-tie"></i></div>
+                        <div class="user-info">
+                            <div class="user-name">Директор школы №45</div>
+                            <div class="post-time">Вчера, 15:45</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Уважаемые родители! Напоминаем, что в эту субботу состоится родительское собрание в актовом зале в 10:00. Будем обсуждать подготовку к зимним праздникам.</p>
+                    </div>
+                    <div class="post-actions">
+                        <div class="action-btn"><i class="far fa-heart"></i> Нравится</div>
+                        <div class="action-btn"><i class="far fa-comment"></i> Комментировать</div>
+                        <div class="action-btn"><i class="far fa-bookmark"></i> Сохранить</div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Signup Section -->
-    <section id="signup" class="signup-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-            <h2 class="text-white mb-5">Напиши нам, если желаете забронировать!</h2>
-
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Ваш имэйл...">
-              <button type="submit" class="btn btn-primary mx-auto">Отправить</button>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section bg-black">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Адрес</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Почта</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="avatar"><i class="fas fa-utensils"></i></div>
+                        <div class="user-info">
+                            <div class="user-name">Школьная столовая</div>
+                            <div class="post-time">15 октября, 09:15</div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Меню на следующую неделю уже доступно. Мы добавили новые блюда казахской кухни по просьбам родителей.</p>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxyZWN0IHg9IjUwIiB5PSI3MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2Y1ZjVmNSIgc3Ryb2tlPSIjZGRkIiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCB4PSI1MCIgeT0iMTUwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZjVmNWY1IiBzdHJva2U9IiNkZGQiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9IjUwIiB5PSIyMzAiIHdpZHRoPSIzMDAiIGhlaWdodD0iNjAiIGZpbGw9IiNmNWY1ZjUiIHN0cm9rZT0iI2RkZCIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+" class="post-image" alt="Школьное меню">
+                    </div>
+                    <div class="post-actions">
+                        <div class="action-btn"><i class="far fa-heart"></i> Нравится</div>
+                        <div class="action-btn"><i class="far fa-comment"></i> Комментировать</div>
+                        <div class="action-btn"><i class="far fa-bookmark"></i> Сохранить</div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Телефон</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">+1 (555) 902-8832</div>
-              </div>
+            
+            <div class="tab-content" id="photos">
+                <div class="card">
+                    <h3>Фото Алии</h3>
+                    <p>Октябрь 2023</p>
+                    <div class="album-grid">
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iODAiIGZpbGw9IiM0YTZmYTUiLz48Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjUwIiBmaWxsPSIjZmY3ZTMwIi8+PC9zdmc+" alt="Фото 1">
+                        </div>
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiM0YTZmYTUiLz48L3N2Zz4=" alt="Фото 2">
+                        </div>
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxwb2x5Z29uIHBvaW50cz0iMjAwLDUwIDM1MCwxNTAgMjUwLDMwMCA1MCwzMDAgNTAsMTUwIiBmaWxsPSIjZmY3ZTMwIi8+PC9zdmc+" alt="Фото 3">
+                        </div>
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iNzAiIGZpbGw9IiM0YTZmYTUiLz48Y2lyY2xlIGN4PSIyNTAiIGN5PSIxNTAiIHI9IjcwIiBmaWxsPSIjZmY3ZTMwIi8+PC9zdmc+" alt="Фото 4">
+                        </div>
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxyZWN0IHg9Ijc1IiB5PSI3NSIgd2lkdGg9IjI1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiM0YTZmYTUiLz48L3N2Zz4=" alt="Фото 5">
+                        </div>
+                        <div class="album-item">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgNDAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2VlZSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjEyMCIgcj0iNjAiIGZpbGw9IiNmZjdlMzAiLz48cmVjdCB4PSIxNDAiIHk9IjE4MCIgd2lkdGg9IjEyMCIgaGVpZ2h0PSI3MCIgZmlsbD0iIzRhNmZhNSIvPjwvc3ZnPg==" alt="Фото 6">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            <div class="tab-content" id="events">
+                <div class="card">
+                    <div class="event-date">СБ, 21 ОКТ • 10:00</div>
+                    <h3>Родительское собрание</h3>
+                    <p>Обсуждение подготовки к зимним праздникам и учебные результаты за первую четверть.</p>
+                    <p>📍 Актовый зал, Школа №45</p>
+                    <div class="post-actions">
+                        <div class="action-btn">✅ 24 Придут</div>
+                        <div class="action-btn">❌ 3 Не придут</div>
+                        <div class="action-btn">❔ 12 Не ответили</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="event-date">ПТ, 27 ОКТ • 14:00</div>
+                    <h3>Экскурсия в музей</h3>
+                    <p>Посещение Национального музея Казахстана. Необходимо дать согласие до 23 октября.</p>
+                    <p>📍 Национальный музей РК</p>
+                    <div class="post-actions">
+                        <div class="action-btn"><i class="far fa-check-circle"></i> Дать согласие</div>
+                        <div class="action-btn"><i class="far fa-file-pdf"></i> Подробности</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="messages">
+                <div class="card">
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div>
+                            <h3>Мария Ивановна</h3>
+                            <p>Алия хорошо справилась с контрольной по математике</p>
+                            <p class="post-time">Сегодня, 09:15</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h3>Директор школы</h3>
+                            <p>Напоминание о родительском собрании</p>
+                            <p class="post-time">Вчера, 16:30</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h3>Школьная столовая</h3>
+                            <p>У Алии отрицательный баланс на счету</p>
+                            <p class="post-time">15 октября, 12:45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="notifications">
+                <div class="card">
+                    <div class="notification-item">
+                        <div class="notification-icon" style="background-color: var(--success);">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Оценка обновлена</h3>
+                            <p>Алия получила 5 по литературе</p>
+                            <p class="post-time">Сегодня, 14:20</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item">
+                        <div class="notification-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div>
+                            <h3>Новые фото</h3>
+                            <p>Добавлены новые фотографии с урока рисования</p>
+                            <p class="post-time">Сегодня, 10:35</p>
+                        </div>
+                    </div>
+                    
+                    <div class="notification-item">
+                        <div class="notification-icon" style="background-color: var(--secondary);">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Важное уведомление</h3>
+                            <p>Завтра последний день для оплаты экскурсии</p>
+                            <p class="post-time">Вчера, 18:15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
+        
+        <div class="create-post-btn">+</div>
+        
+        <div class="bottom-nav">
+            <div class="nav-btn active">
+                <i class="fas fa-home"></i>
+                <span>Главная</span>
+            </div>
+            <div class="nav-btn">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Календарь</span>
+            </div>
+            <div class="nav-btn">
+                <div class="icon-wrapper">
+                    <i class="fas fa-envelope"></i>
+                    <div class="badge">3</div>
+                </div>
+                <span>Сообщения</span>
+            </div>
+            <div class="nav-btn">
+                <i class="fas fa-user"></i>
+                <span>Профиль</span>
+            </div>
         </div>
+    </div>
 
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black small text-center text-white-50">
-      <div class="container">
-        Copyright &copy; Баня Орал 2019
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
-
-  </body>
-
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all tab content
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                // Show the selected tab content
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Child selector functionality
+        document.querySelectorAll('.child-option').forEach(option => {
+            option.addEventListener('click', () => {
+                document.querySelectorAll('.child-option').forEach(o => o.classList.remove('active'));
+                option.classList.add('active');
+            });
+        });
+    </script>
+</body>
 </html>
